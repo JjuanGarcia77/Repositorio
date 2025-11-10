@@ -45,7 +45,7 @@ nav ul li a:hover {
 
 /*imagen the fond*/
 .fondo {
-    background-image: url(/boathouse-9871057_1280.webp);
+    background-image: url("boathouse-9871057_1280.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
