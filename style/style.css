@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e2a38;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/*imagen the fond*/
+.fondo {
+    background-image: url(/img/boathouse-9871057_1280.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-texto {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.titulo-seccion {
+    font-size: 1.8rem;
+    color: #1e2a38;
+    margin-bottom: 30px;
+}
+
+/*Activits*/
+.container-actividades-moodle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.container-de-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.container-de-logos:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo-moodle {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 100%;
+}
+
+.container-de-logos a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-de-logos a:hover {
+    text-decoration: underline;
+}
