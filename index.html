@@ -4,33 +4,151 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio - Juan David García</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h1>Juan David García</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./rutas-actividades.html">Proyecto Actividades</a></li>
-                <li><a href="./rutas-moodle.html">Proyecto moodle</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <h1 class="title">
+            <span id="typing"></span>
+            <span class="nombre"> Juan David</span>
+        </h1>
+
+        <button id="dashboardBtn" class="btn-dashboard">
+            Dashboard
+        </button>
     </header>
 
-    <section class="fondo">
-        <div class="overlay-texto">
-            <h2>Bienvenido a mi portafolio</h2>
-            <p>Explora mis proyectos a tu gusto..</p>
-        </div>
-    </section>
+    <main class="contenido">
 
-    <footer>
-        <p>Explico python</p>
+        <div class="video-card">
+
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="./img/vid/Vid-main.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay"></div>
+
+            <div class="hero-text">
+                <img src="./img/I-am2.png" class="hero-img">
+
+                <h2> Bienvenidos a mi portafolio <br>Programar es crear el futuro </h2>
+                <p>Transformando ideas en código todos los días</p>
+
+                <button id="trabajosBtn" class="btn-trabajos">
+                    Ver mis trabajos
+                </button>
+            </div>
+
+        </div>
+
+        <section class="about-sections">
+
+            <!-- SOBRE MI -->
+            <div class="about-row">
+                <img src="./img/I-am.png" class="about-img">
+
+                <div class="about-info">
+                    <h3> Sobre mí</h3>
+
+                    <p>
+                        Soy desarrollador web apasionado por crear interfaces modernas,
+                        dashboards interactivos y experiencias visuales llamativas.
+                    </p>
+
+                    <p>
+                        Trabajo con tecnologías como React, Node, bases de datos
+                        y diseño UI/UX para transformar ideas en soluciones reales.
+                    </p>
+
+                    <p>
+                        Siempre estoy aprendiendo nuevas herramientas y mejorando
+                        mis habilidades cada día 🚀
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- MI GATA -->
+            <div class="about-row reverse">
+                <img src="./img/cat.jpg" class="about-img">
+
+                <div class="about-info">
+                    <h3>🐱 Mi gata</h3>
+
+                    <p>
+                        Mi compañera oficial de programación.
+                        Siempre duerme cerca mientras trabajo.
+                    </p>
+
+                    <p>
+                        Supervisora de bugs, experta en caminar sobre el teclado
+                        y borrar líneas importantes de código 😹
+                    </p>
+
+                    <p>
+                        Sin ella, las sesiones nocturnas no serían lo mismo.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- ================= SIDEBAR IZQUIERDO ================= -->
+    <aside id="sidebar" class="sidebar">
+
+        <h3>🚀 Mis Trabajos</h3>
+
+        <!-- ITEM 1 -->
+        <div class="aside-item">
+
+            <button class="aside-toggle">
+                📘 Moodle
+            </button>
+
+            <div class="aside-content">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+            </div>
+
+        </div>
+
+
+        <!-- ITEM 2 -->
+        <div class="aside-item">
+
+            <button class="aside-toggle">
+                💼 Actividades
+            </button>
+
+            <div class="aside-content">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- botón flotante gato -->
+    <button id="toggleAside" class="cat-btn">🐱</button>
+
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        © 2026 Juan David — Portafolio Web
     </footer>
+
 </body>
 
 </html>
