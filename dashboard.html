@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Dashboard - Administrador</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <script src="./js/dashboard.js" defer></script>
+</head>
+
+<body class="dark-theme">
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">JD.DEV</div>
+            <nav>
+                <button class="nav-btn active" onclick="showTab('actividades')">Proyectos Actividades</button>
+                <button class="nav-btn" onclick="showTab('moodle')">Proyectos Moodle</button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1 id="tab-title">Proyectos Actividades</h1>
+                <div class="user-profile">Juan David García Jimenez</div>
+                <a href="./index.html"><button class="button-Dashboard">Exit</button></a>
+            </header>
+
+            <section class="content-area">
+                <div class="add-project-card">
+                    <h3>Añadir Nuevo Trabajo</h3>
+                    <div class="form-group-grid"
+                        style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+
+                        <input type="text" id="proj-name" placeholder="Nombre del proyecto (Ej: Calculadora)">
+
+                        <select id="proj-lang" class="custom-select">
+                            <option value="html-css">Lenguaje: HTML CSS</option>
+                            <option value="python">Lenguaje: PYTHON</option>
+                            <option value="javascript">Lenguaje: JavaScript</option>
+                        </select>
+
+                        <input type="text" id="proj-url" placeholder="URL de destino (Link de GitHub o Carpeta)">
+
+                        <button class="add-btn" onclick="addNewProject()" style="grid-column: span 2;">
+                            Guardar en JSON Server 🚀
+                        </button>
+                    </div>
+                </div>
+
+                <div id="project-list" class="project-grid">
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

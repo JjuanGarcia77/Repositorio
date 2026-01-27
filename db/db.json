@@ -1,0 +1,41 @@
+{
+  "moodle": [
+    {
+      "id": "7586",
+      "nombre": "moodle-1",
+      "lenguaje": "python",
+      "url": "https://github.com/JjuanGarcia77/M1_python_moodle_week_1",
+      "img": "https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png"
+    },
+    {
+      "id": "0e69",
+      "nombre": "moodle-2",
+      "lenguaje": "python",
+      "url": "https://github.com/JjuanGarcia77/M1_python_moodle_week_2",
+      "img": "https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png"
+    }
+  ],
+  "actividades": [
+    {
+      "id": "1df8",
+      "nombre": "actividad 1",
+      "lenguaje": "python",
+      "url": "https://github.com/JjuanGarcia77/M1_python_actividad_1",
+      "img": "https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png"
+    },
+    {
+      "id": "b049",
+      "nombre": "actividad 2",
+      "lenguaje": "python",
+      "url": "https://github.com/JjuanGarcia77/M1_python_actividad_3",
+      "img": "https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png"
+    },
+    {
+      "id": "4bcc",
+      "nombre": "actividad 3",
+      "lenguaje": "python",
+      "url": "https://github.com/JjuanGarcia77/M1_python_actividad_4",
+      "img": "https://cdn.iconscout.com/icon/free/png-256/free-python-3521655-2945099.png"
+    }
+  ]
+}

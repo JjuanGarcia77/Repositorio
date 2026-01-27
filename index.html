@@ -1,154 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
+    <title>Mi Portafolio - Juan David</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
 </head>
-
 <body>
     <header class="header">
         <h1 class="title">
             <span id="typing"></span>
             <span class="nombre"> Juan David</span>
         </h1>
-
-        <button id="dashboardBtn" class="btn-dashboard">
-            Dashboard
-        </button>
+        <a href="./dashboard.html">
+            <button id="dashboardBtn" class="btn-dashboard">Dashboard</button>
+        </a>
     </header>
 
     <main class="contenido">
-
         <div class="video-card">
-
             <video autoplay muted loop playsinline class="bg-video">
                 <source src="./img/vid/Vid-main.mp4" type="video/mp4">
             </video>
-
             <div class="overlay"></div>
-
             <div class="hero-text">
                 <img src="./img/I-am2.png" class="hero-img">
-
                 <h2> Bienvenidos a mi portafolio <br>Programar es crear el futuro </h2>
                 <p>Transformando ideas en código todos los días</p>
-
-                <button id="trabajosBtn" class="btn-trabajos">
-                    Ver mis trabajos
-                </button>
+                <button id="trabajosBtn" class="btn-trabajos">Ver mis trabajos</button>
             </div>
-
         </div>
 
-        <section class="about-sections">
+        <section id="detalle-proyecto" class="about-info"
+            style="display:none; position: relative; margin: 60px auto; max-width: 1000px; border: 2px solid #ff7a00; animation: fadeIn 0.5s ease; padding: 30px; border-radius: 20px;">
+            
+            <button id="close-detail" style="position: absolute; top: 15px; right: 20px; background: transparent; border: 2px solid #ff7a00; color: #ff7a00; font-size: 24px; font-weight: bold; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center;">&times;</button>
 
-            <!-- SOBRE MI -->
-            <div class="about-row">
-                <img src="./img/I-am.png" class="about-img">
-
-                <div class="about-info">
-                    <h3> Sobre mí</h3>
-
-                    <p>
-                        Soy desarrollador web apasionado por crear interfaces modernas,
-                        dashboards interactivos y experiencias visuales llamativas.
-                    </p>
-
-                    <p>
-                        Trabajo con tecnologías como React, Node, bases de datos
-                        y diseño UI/UX para transformar ideas en soluciones reales.
-                    </p>
-
-                    <p>
-                        Siempre estoy aprendiendo nuevas herramientas y mejorando
-                        mis habilidades cada día 🚀
-                    </p>
-                </div>
-            </div>
-
-
-            <!-- MI GATA -->
-            <div class="about-row reverse">
-                <img src="./img/cat.jpg" class="about-img">
-
-                <div class="about-info">
-                    <h3>🐱 Mi gata</h3>
-
-                    <p>
-                        Mi compañera oficial de programación.
-                        Siempre duerme cerca mientras trabajo.
-                    </p>
-
-                    <p>
-                        Supervisora de bugs, experta en caminar sobre el teclado
-                        y borrar líneas importantes de código 😹
-                    </p>
-
-                    <p>
-                        Sin ella, las sesiones nocturnas no serían lo mismo.
-                    </p>
-                </div>
-            </div>
-
+            <h3 id="proyecto-titulo" style="color: #ff7a00;">Título</h3>
+            <div id="proyecto-descripcion" style="font-size: 1.2rem; margin-top: 20px;"></div>
         </section>
 
-
+        <section class="about-sections">
+            <div class="about-row">
+                <img src="./img/I-am.png" class="about-img">
+                <div class="about-info">
+                    <h3> Sobre mí</h3>
+                    <p>Soy desarrollador web apasionado por crear interfaces modernas y dashboards interactivos.</p>
+                </div>
+            </div>
+            <div class="about-row reverse">
+                <img src="./img/cat.jpg" class="about-img">
+                <div class="about-info">
+                    <h3>🐱 Mi gata</h3>
+                    <p>Mi compañera oficial de programación.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- ================= SIDEBAR IZQUIERDO ================= -->
     <aside id="sidebar" class="sidebar">
-
         <h3>🚀 Mis Trabajos</h3>
-
-        <!-- ITEM 1 -->
         <div class="aside-item">
-
-            <button class="aside-toggle">
-                📘 Moodle
-            </button>
-
+            <button class="aside-toggle">📘 Moodle</button>
             <div class="aside-content">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
+                <p class="tech-link">HTML y CSS</p>
+                <p class="tech-link">Python</p>
+                <p class="tech-link">JavaScript</p>
             </div>
-
         </div>
-
-
-        <!-- ITEM 2 -->
         <div class="aside-item">
-
-            <button class="aside-toggle">
-                💼 Actividades
-            </button>
-
+            <button class="aside-toggle">💼 Actividades</button>
             <div class="aside-content">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
+                <p class="tech-link">HTML y CSS</p>
+                <p class="tech-link">Python</p>
+                <p class="tech-link">JavaScript</p>
             </div>
-
         </div>
-
     </aside>
 
-
-    <!-- botón flotante gato -->
-    <button id="toggleAside" class="cat-btn">🐱</button>
-
-
-
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-        © 2026 Juan David — Portafolio Web
-    </footer>
-
+    <button id="toggleAside" class="cat-btn show">🐱</button>
+    <footer class="footer">© 2026 Juan David — Portafolio Web</footer>
 </body>
-
 </html>
