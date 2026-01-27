@@ -1,0 +1,128 @@
+:root {
+    --black: #0d0d0d;
+    --dark-gray: #1a1a1a;
+    --gray: #333333;
+    --purple: #8a2be2;
+    --orange: #ff8c00;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Aside / Sidebar */
+.sidebar {
+    width: 260px;
+    background-color: var(--dark-gray);
+    border-right: 1px solid var(--gray);
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.nav-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid var(--gray);
+    color: var(--white);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn.active, .nav-btn:hover {
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 20px;
+}
+
+.add-project-card {
+    background: var(--dark-gray);
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid var(--orange);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    background: var(--black);
+    color: white;
+}
+
+.add-btn {
+    background: var(--orange);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: var(--gray);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 3px solid var(--purple);
+}
+
+.button-Dashboard{
+    background-color: #8a2be2;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    height: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.user-profile{
+    color: #8a2be2;
+    text-align: center;
+    margin-left: 50px;
+}
