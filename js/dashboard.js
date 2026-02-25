@@ -1,5 +1,5 @@
 let currentTab = 'actividades'; 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://tu-app-production.up.railway.app";
 
 // Iconos actualizados
 const langImages = {
