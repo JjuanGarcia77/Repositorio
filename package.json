@@ -1,5 +1,50 @@
 {
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.9"
+  },
+  "scripts": {
+  "start": "json-server --host 0.0.0.0 --port $PORT db/db.json"
+  },
+  "name": "repositorio",
+  "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
-    "json-server": "^1.0.0-beta.5"
-  }
+    "chalk": "^5.6.2",
+    "chokidar": "^5.0.0",
+    "colorette": "^2.0.20",
+    "dayjs": "^1.11.19",
+    "dot-prop": "^10.1.0",
+    "es-escape-html": "^0.1.1",
+    "eta": "^4.5.0",
+    "header-range-parser": "^1.1.3",
+    "http-status-emojis": "^2.2.0",
+    "inflection": "^3.0.2",
+    "ipaddr.js": "^2.3.0",
+    "json5": "^2.2.3",
+    "lowdb": "^7.0.1",
+    "milliparsec": "^5.1.0",
+    "mime": "^4.1.0",
+    "mrmime": "^2.0.1",
+    "negotiator": "^1.0.0",
+    "readdirp": "^5.0.0",
+    "regexparam": "^2.0.2",
+    "sirv": "^3.0.2",
+    "sort-on": "^7.0.0",
+    "steno": "^4.0.2",
+    "tagged-tag": "^1.0.0",
+    "totalist": "^3.0.1",
+    "type-fest": "^5.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JjuanGarcia77/Repositorio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JjuanGarcia77/Repositorio/issues"
+  },
+  "homepage": "https://github.com/JjuanGarcia77/Repositorio#readme",
+  "description": ""
 }
