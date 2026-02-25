@@ -1,9 +1,6 @@
 {
-  "devDependencies": {
-    "json-server": "^1.0.0-beta.9"
-  },
   "scripts": {
-  "start": "json-server --host 0.0.0.0 --port $PORT db/db.json"
+    "start": "json-server --host 0.0.0.0 --port $PORT db/db.json"
   },
   "name": "repositorio",
   "version": "1.0.0",
@@ -20,6 +17,7 @@
     "http-status-emojis": "^2.2.0",
     "inflection": "^3.0.2",
     "ipaddr.js": "^2.3.0",
+    "json-server": "^1.0.0-beta.9",
     "json5": "^2.2.3",
     "lowdb": "^7.0.1",
     "milliparsec": "^5.1.0",
