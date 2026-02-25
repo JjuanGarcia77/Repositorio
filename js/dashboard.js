@@ -1,5 +1,5 @@
 let currentTab = 'actividades'; 
-const BASE_URL = "repositorio-production-790f.up.railway.app";
+const BASE_URL = "https://repositorio-production-790f.up.railway.app";
 
 // Iconos actualizados
 const langImages = {

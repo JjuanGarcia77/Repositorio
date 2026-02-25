@@ -33,7 +33,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* ================= ACORDEÓN Y CONTENIDO DINÁMICO ================= */
-const BASE_URL = "repositorio-production-790f.up.railway.app";
+const BASE_URL = "https://repositorio-production-790f.up.railway.app";
 /*const BASE_URL = "http://localhost:3000";*/
 const toggles = document.querySelectorAll(".aside-toggle");
 
