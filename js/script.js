@@ -59,7 +59,8 @@ techLinks.forEach(link => {
         const categoria = botonPadre.toLowerCase().includes("moodle") ? "moodle" : "actividades";
 
         try {
-            const proyectos = DATA[categoria];
+            const response = await fetch(`${BASE_URL}/${categoria}`);
+            const proyectos = await response.json();
             
             // Filtramos comparando con la tecnología normalizada
             const filtrados = proyectos.filter(p => p.lenguaje === tecnologia);
