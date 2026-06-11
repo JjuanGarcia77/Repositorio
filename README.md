@@ -2,7 +2,7 @@
 
 Portafolio web interactivo desarrollado con **React + Vite**, estilizado con **CSS puro** y animado con **Framer Motion** y **GSAP**. Un diseño minimalista, moderno y elegante enfocado en tonalidades negro, gris y blanco.
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Core**: React 19, JavaScript (ES6+), HTML5, CSS3.
 - **Animaciones**: Framer Motion (revelados al hacer scroll, transiciones de tabs) y GSAP (efecto de scramble de texto, cursor interactivo magnético).
@@ -10,7 +10,7 @@ Portafolio web interactivo desarrollado con **React + Vite**, estilizado con **C
 - **Entorno**: Vite (construcción ultra-rápida y HMR).
 - **Despliegue**: GitHub Actions (Integración y Despliegue Continuo - CI/CD).
 
-## 🛠️ Comandos de Desarrollo
+## Comandos de Desarrollo
 
 En la raíz del proyecto, puedes ejecutar:
 
@@ -23,7 +23,7 @@ Compila la aplicación para producción en la carpeta `dist/`. Prepara el bundle
 ### `npm run preview`
 Permite previsualizar localmente la compilación de producción.
 
-## 📦 Estructura de Carpetas
+## Estructura de Carpetas
 
 ```text
 ├── .github/workflows/deploy.yml  # Flujo de despliegue continuo a GitHub Pages
