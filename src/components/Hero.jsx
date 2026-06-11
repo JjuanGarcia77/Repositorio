@@ -211,7 +211,7 @@ export default function Hero() {
             <div className="hero__avatar-ring hero__avatar-ring--2" />
             <div className="hero__avatar-frame">
               <img
-                src={personalInfo.avatar}
+                src={`${import.meta.env.BASE_URL}${personalInfo.avatar.startsWith('/') ? personalInfo.avatar.slice(1) : personalInfo.avatar}`}
                 alt={`${personalInfo.name} - Full Stack Developer`}
                 className="hero__avatar-img"
                 onError={e => {
