@@ -1,0 +1,187 @@
+.contact {
+  background: var(--black);
+  padding-bottom: 0;
+}
+
+.contact__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+.contact__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact__intro-text {
+  font-size: 1.05rem;
+  color: var(--gray-300);
+  line-height: 1.8;
+}
+
+.contact__copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.contact__copy-btn:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.18);
+}
+
+.contact__copy-email {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--white);
+  text-align: left;
+}
+
+.contact__copy-action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--gray-400);
+  white-space: nowrap;
+  background: rgba(255,255,255,0.06);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+}
+
+.contact__availability {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+.contact__avail-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 10px rgba(74,222,128,0.7);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Contact cards */
+.contact__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact__card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+}
+
+.contact__card--link {
+  cursor: pointer;
+}
+
+.contact__card--link:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.12);
+  transform: translateX(4px);
+}
+
+.contact__card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-300);
+  flex-shrink: 0;
+}
+
+.contact__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.contact__card-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+}
+
+.contact__card-value {
+  font-size: 0.9rem;
+  color: var(--gray-200);
+  font-weight: 500;
+}
+
+.contact__card-arrow {
+  color: var(--gray-600);
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.contact__card--link:hover .contact__card-arrow {
+  color: var(--white);
+  transform: translate(2px, -2px);
+}
+
+/* Footer */
+.contact__footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 24px;
+}
+
+.contact__footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact__footer-copy,
+.contact__footer-made {
+  font-size: 0.8rem;
+  color: var(--gray-600);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 900px) {
+  .contact__layout {
+    grid-template-columns: 1fr;
+  }
+  .contact__footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,129 @@
+.skills {
+  background: var(--gray-900);
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.skills__card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all var(--transition-base);
+}
+
+.skills__card:hover {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.12);
+  box-shadow: 0 0 40px rgba(255,255,255,0.02);
+}
+
+.skills__card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skills__card-emoji {
+  font-size: 1.3rem;
+  filter: grayscale(1) brightness(1.5);
+}
+
+.skills__card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  flex: 1;
+}
+
+.skills__card-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  background: rgba(255,255,255,0.05);
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+}
+
+.skills__card-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--gray-300);
+  font-family: var(--font-mono);
+  transition: color var(--transition-fast);
+}
+
+.skills__item:hover {
+  color: var(--white);
+}
+
+.skills__item-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gray-600);
+  flex-shrink: 0;
+}
+
+/* Marquee */
+.skills__marquee-wrapper {
+  overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 20px 0;
+  mask-image: linear-gradient(90deg, transparent, black 15%, black 85%, transparent);
+}
+
+.skills__marquee {
+  display: flex;
+  gap: 0;
+  animation: marquee-scroll 30s linear infinite;
+  width: max-content;
+}
+
+.skills__marquee-item {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--gray-500);
+  white-space: nowrap;
+  padding: 0 4px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.skills__marquee-sep {
+  margin: 0 16px;
+  color: var(--gray-700);
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 640px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}
