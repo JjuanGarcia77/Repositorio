@@ -1,16 +1,40 @@
-# React + Vite
+# Juan David Garcia Jimenez - Portafolio Profesional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio web interactivo desarrollado con **React + Vite**, estilizado con **CSS puro** y animado con **Framer Motion** y **GSAP**. Un diseño minimalista, moderno y elegante enfocado en tonalidades negro, gris y blanco.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Core**: React 19, JavaScript (ES6+), HTML5, CSS3.
+- **Animaciones**: Framer Motion (revelados al hacer scroll, transiciones de tabs) y GSAP (efecto de scramble de texto, cursor interactivo magnético).
+- **Iconografía**: Lucide React.
+- **Entorno**: Vite (construcción ultra-rápida y HMR).
+- **Despliegue**: GitHub Actions (Integración y Despliegue Continuo - CI/CD).
 
-## React Compiler
+## 🛠️ Comandos de Desarrollo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+En la raíz del proyecto, puedes ejecutar:
 
-## Expanding the ESLint configuration
+### `npm run dev`
+Inicia el servidor de desarrollo en modo local (generalmente en `http://localhost:5173`).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### `npm run build`
+Compila la aplicación para producción en la carpeta `dist/`. Prepara el bundle optimizado y minificado.
+
+### `npm run preview`
+Permite previsualizar localmente la compilación de producción.
+
+## 📦 Estructura de Carpetas
+
+```text
+├── .github/workflows/deploy.yml  # Flujo de despliegue continuo a GitHub Pages
+├── public/                       # Activos públicos (imágenes, iconos, favicon)
+├── src/
+│   ├── components/               # Componentes modulares (Navbar, Hero, Skills, etc.)
+│   ├── data/                     # Datos estáticos del portafolio (portfolio.js)
+│   ├── hooks/                    # Animaciones reutilizables y ganchos personalizados
+│   ├── App.jsx                   # Componente raíz
+│   ├── index.css                 # Estilos globales y variables de diseño (tokens)
+│   └── main.jsx                  # Punto de entrada de React
+├── index.html                    # Plantilla HTML principal
+└── vite.config.js                # Configuración del entorno de Vite
+```
